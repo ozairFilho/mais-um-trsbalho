@@ -1,0 +1,105 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+
+/* Centraliza o menu de navegação */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Submenu cascata */
+nav ul li ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    top: 100%; /* Para alinhar o submenu logo abaixo do item de menu */
+    left: 0;
+}
+
+nav ul li:hover ul.submenu {
+    display: block;
+}
+
+nav ul li ul.submenu li {
+    display: block;
+}
+
+nav ul li ul.submenu li a {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+/* Seção principal */
+main {
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.memory-item {
+    flex: 1 1 300px;
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.memory-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
